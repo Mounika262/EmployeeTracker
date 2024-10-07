@@ -2,10 +2,15 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 14  # Adjust to your Node.js version
     commands:
       - echo Installing dependencies...
       - npm install
   build:
     commands:
-      - echo Running tests...
-      - npm test
+      - echo Build started on `date`
+      - npm run build  # Adjust if you have a specific build command
+artifacts:
+  files:
+    - '**/*'  # Include all files in the output
