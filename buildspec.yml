@@ -3,14 +3,15 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14  # Adjust to your Node.js version
+      nodejs: 14 # Specify your Node.js version here
     commands:
       - echo Installing dependencies...
       - npm install
+  pre_build:
+    commands:
+      - echo Running tests...
+      - npm test # This will run your tests; ensure you have a test script defined in package.json
   build:
     commands:
-      - echo Build started on `date`
-      - npm run build  # Adjust if you have a specific build command
-artifacts:
-  files:
-    - '**/*'  # Include all files in the output
+      - echo Building the application...
+      - npm run build
