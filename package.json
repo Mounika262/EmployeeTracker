@@ -1,16 +1,16 @@
 {
-  "dependencies": {
-    "package.json": "^2.0.1",
-    "puppeteer": "^22.12.1"
-  },
   "name": "mounika",
   "version": "1.0.0",
+  "description": "Your project description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "your-build-command",  // This line needs to be added or updated
+    "test": "your-test-command"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    // your dependencies
+  },
+  "devDependencies": {
+    // your dev dependencies
+  }
 }
